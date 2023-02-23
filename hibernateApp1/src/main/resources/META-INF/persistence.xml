@@ -18,6 +18,13 @@
           <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gokuldb" />
             <property name="javax.persistence.jdbc.user" value="root" />
             <property name="javax.persistence.jdbc.password" value="Root" />
+             
+             
+             
+        <!-- It is for creating table from hibernate and checking the query -->      
+              <property name="hibernate.show_sql" value="true"/>
+              <property name="hibernate.hbm2ddl.auto" value="update"/>
+ 
  
         </properties>
     </persistence-unit>

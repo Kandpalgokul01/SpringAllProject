@@ -2,7 +2,6 @@ package com.masai.Entities;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 public class Demo {
@@ -14,14 +13,14 @@ public class Demo {
 
 	EntityManager em=emf.createEntityManager();
 	
-   EntityTransaction et= em.getTransaction();
+//   EntityTransaction et= em.getTransaction();
 	
    
-  Student st= em.find(Student.class, 20);
-	et.begin();
-	em.remove(st);
+  Student st= new Student(40,"ram",5654);
+	em.getTransaction().begin();
+	em.persist(st);
 	
-	et.commit();
+	em.getTransaction().commit();
 
 
 	em.close();
