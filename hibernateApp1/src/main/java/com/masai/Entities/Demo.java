@@ -17,7 +17,7 @@ public class Demo {
 	
    
   Student st= new Student("ram",5654);
-  Product p=new Product("diary",563);
+  Product p=new Product("di",563);
 	em.getTransaction().begin();
 	em.persist(st);
 	em.persist(p);
