@@ -1,6 +1,8 @@
 package com.masai.Entities;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
@@ -9,6 +11,7 @@ public class Student {
 	
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int roll;
 	private String name;
 	private int marks;
@@ -19,9 +22,9 @@ public class Student {
 	}
 
 
-	public Student(int roll, String name, int marks) {
+	public Student(String name, int marks) {
 	
-		this.roll = roll;
+	
 		this.name = name;
 		this.marks = marks;
 	}

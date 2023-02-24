@@ -16,10 +16,11 @@ public class Demo {
 //   EntityTransaction et= em.getTransaction();
 	
    
-  Student st= new Student(40,"ram",5654);
+  Student st= new Student("ram",5654);
+  Product p=new Product("dairy",445);
 	em.getTransaction().begin();
 	em.persist(st);
-	
+	em.persist(p);
 	em.getTransaction().commit();
 
 
