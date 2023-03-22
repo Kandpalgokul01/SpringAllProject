@@ -19,6 +19,8 @@ public class Account {
 	public Account() {
 		
 	}
+	
+	
 	public Account(String name, int balance) {
 		
 		this.name = name;
@@ -48,7 +50,13 @@ public class Account {
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Account [accno=" + accno + ", name=" + name + ", balance=" + balance + "]";
+	}
 	
-	
+
 
 }

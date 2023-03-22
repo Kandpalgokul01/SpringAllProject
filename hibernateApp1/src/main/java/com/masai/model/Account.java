@@ -19,12 +19,10 @@ public class Account {
 	public Account() {
 		
 	}
-	@Override
-	public String toString() {
-		return "Account [accno=" + accno + ", name=" + name + ", balance=" + balance + "]";
-	}
-	public Account(String name, int balance) {
-		
+	
+	
+	public Account(int a,String name, int balance) {
+		this.accno=a;
 		this.name = name;
 		this.balance = balance;
 	}
@@ -52,7 +50,13 @@ public class Account {
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Account [accno=" + accno + ", name=" + name + ", balance=" + balance + "]";
+	}
 	
-	
+
 
 }
