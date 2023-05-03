@@ -13,6 +13,7 @@ public class Main {
 		
 		A a=ctx.getBean("a",A.class);
 		a.funA();
+	    
 	}
 
 }

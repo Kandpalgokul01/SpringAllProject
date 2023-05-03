@@ -2,15 +2,13 @@ package com.masai;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
-@Scope("prototype")
+@Service
 public class A {
    
 	@Autowired
-	@Qualifier(value = "b5")
 	private B b1;
 	
 	
