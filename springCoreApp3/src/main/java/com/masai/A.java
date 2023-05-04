@@ -16,6 +16,6 @@ public class A {
 	public void funA() {
 		
 		System.out.println("Inside funA at A");
-	    System.out.println(b1);
+	    b1.showB();
 	}
 }

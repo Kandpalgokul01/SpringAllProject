@@ -14,6 +14,9 @@ public class Main {
 		
 		a1.funA();
 		
+		
+		((AnnotationConfigApplicationContext)ctx).close();
+		
 	}
 
 }
